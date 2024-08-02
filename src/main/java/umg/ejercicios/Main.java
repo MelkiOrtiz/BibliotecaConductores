@@ -3,6 +3,9 @@ package umg.ejercicios;
 import umg.ejercicios.conductores.Conductor;
 import umg.ejercicios.conductores.ConductorDeCoche;
 import umg.ejercicios.conductores.ConductorDeMoto;
+import umg.progra2.Vehiculos.Coche;
+import umg.progra2.Vehiculos.Moto;
+import umg.progra2.Vehiculos.Vehiculo;
 
 public class Main {
     public static void main(String[] args) {
@@ -18,5 +21,11 @@ public class Main {
 
         System.out.println("Información del conductor de moto:");
         conductorMoto.mostrarInformacion();
+
+        Vehiculo ToyotaHilux = new Coche("Toyota","Hilux","2025",4);
+        ToyotaHilux.mostrarDetalles();
+
+        Vehiculo SuzukiGN = new Moto("Suzuki","GN125","2023",false);
+        SuzukiGN.mostrarDetalles();
     }
 }
